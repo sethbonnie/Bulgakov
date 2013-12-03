@@ -40,6 +40,9 @@ html, body {
 #bkv_menu_trigger {
   display: none;
 }
+#bkv_menu_trigger:hover {
+  cursor: pointer;
+}
 .contract #bkv_menu_trigger {
   background-image: url(img/expand.555.24px.png);
 }
