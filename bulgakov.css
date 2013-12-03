@@ -19,16 +19,6 @@ html, body {
   margin: 0;
 }
 
-/* Sweet selections */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 /* Standard Styles */
 #bkv_container {
   height: 100%;
@@ -47,6 +37,22 @@ html, body {
   color: #444;
 }
 
+#bkv_menu_trigger {
+  display: none;
+}
+.contract #bkv_menu_trigger {
+  background-image: url(img/expand.555.24px.png);
+}
+.expand #bkv_menu_trigger {
+  background-image: url(img/contract.555.24px.png);
+}
+.contract #bkv_menu_trigger:hover {
+  background-image: url(img/expand.888.24px.png);
+}
+.expand #bkv_menu_trigger:hover {
+  background-image: url(img/contract.888.24px.png);
+}
+
 #bkv_main {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -56,37 +62,53 @@ html, body {
   width: 100%;
 }
 
-/* XLarge Screens */
+/* xl: XLarge Screens */
 @media (min-width: 1100px) {
   #bkv_container {
     padding-left: 25%;
   }
   #bkv_menu {
-    width: 25%;
-    height: 100%;
     left: 0px;
     box-shadow: 2px 0 3px #aaa,
           inset -3px 0 5px #ccc;
     padding-top: 180px;
   }
+  /* Both classes are the same since at this level there's no 
+   * notion of expansion or contraction. */
+  #bkv_menu.contract {
+    width: 25%;
+    height: 100%;
+  }
+  #bkv_menu.expand {
+    width: 25%;
+    height: 100%;
+  }
 }
 
-/* Large Screens */
+/* lg: Large Screens */
 @media (min-width: 768px) and (max-width: 1099px) { 
   #bkv_container {
     padding-left: 30%;
   }
   #bkv_menu {
-    width: 30%;
-    height: 100%;
     left: 0px;
     box-shadow: 2px 0 3px #aaa,
           inset -3px 0 5px #ccc;
     padding-top: 140px;
   }
+  /* Both classes are the same since at this level there's no 
+   * notion of expansion or contraction. */
+  #bkv_menu.contract {
+    width: 30%;
+    height: 100%;
+  }
+  #bkv_menu.expand {
+    width: 30%;
+    height: 100%;
+  }
 }
 
-/* Medium Screens */
+/* md: Medium Screens */
 @media (min-width: 481px) and (max-width: 767px) {
   html, body {
     padding: 0;
@@ -95,13 +117,27 @@ html, body {
     padding-top: 50px;
   }
   #bkv_menu {
-    width: 100%;
-    height: 50px;
     top: 0px;
     left: 0px;
     text-align: center;
     box-shadow: 0px 2px 3px #aaa,
           inset 0px -3px 5px #ccc;
+  }
+  #bkv_menu.contract {
+    width: 100%;
+    height: 50px;
+  }
+  #bkv_menu.expand {
+    width: 100%;
+    height: 100%;
+  }
+
+  #bkv_menu_trigger{
+    display: inline-block;
+    float: right;
+    height: 24px;
+    width: 24px;
+    margin: 12px;
   }
 
   #bkv_main {
@@ -110,23 +146,38 @@ html, body {
   }
 }
 
-/* Small Screens (Landscape) */
+/* sm: Small Screens (Landscape) */
 @media (max-width: 480px) {
   #bkv_container {
     padding-top: 40px;
   }
   #bkv_menu {
-    width: 100%;
-    height: 40px;
     top: 0px;
     left: 0px;
     text-align: center;
     box-shadow: 0px 2px 3px #aaa,
           inset 0px -3px 5px #ccc;
   }
+  #bkv_menu.contract {
+    width: 100%;
+    height: 40px;
+  }
+  #bkv_menu.expand {
+    width: 100%;
+    height: 100%;
+  }
+
+  #bkv_menu_trigger{
+    display: inline-block;
+    float: right;
+    height: 24px;
+    width: 24px;
+    margin: 6px;
+  }
 }
 
-/* Small Screens (Portrait) */
+/* xs: Extra Small Screens (Portrait) */
 @media (max-width: 380px) {
   
 }
+
