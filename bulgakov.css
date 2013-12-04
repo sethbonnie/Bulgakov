@@ -50,16 +50,20 @@ html, body {
   cursor: pointer;
 }
 .contract #bkv_menu_trigger {
-  background-image: url(img/expand.555.24px.png);
+  background-image: url(menu_sprite.png);
+  background-position: 0px 48px;
 }
 .expand #bkv_menu_trigger {
-  background-image: url(img/contract.555.24px.png);
+  background-image: url(menu_sprite.png);
+  background-position: 0px 0px;
 }
 .contract #bkv_menu_trigger:hover {
-  background-image: url(img/expand.888.24px.png);
+  background-image: url(menu_sprite.png);
+  background-position: 0px 24px;
 }
 .expand #bkv_menu_trigger:hover {
-  background-image: url(img/contract.888.24px.png);
+  background-image: url(menu_sprite.png);
+  background-position: 0px 72px;
 }
 
 #bkv_main {
