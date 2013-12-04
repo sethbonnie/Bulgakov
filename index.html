@@ -8,31 +8,18 @@
 </head>
 <body>
   <div id='bkv_container'>
-    <div id='bkv_menu' class='contract'>
+    <nav id='bkv_menu' class='contract'>
+      <div id='bkv_persistent'>
         <a id='bkv_menu_trigger'></a>
-    </div>
+      </div>
+
+      <div id='bkv_collapsable'>
+
+      </div>
+    </nav>
 
     <div id='bkv_main'></div>
   </div>
-  <script>
-  (function() {
-    var bkv_trigger = document.getElementById('bkv_menu_trigger');
-    var bkv_menu = document.getElementById('bkv_menu');
-    var bkv_expanded = false;
-    bkv_trigger.onclick = function() {
-      if (bkv_expanded) {
-        // contract
-        bkv_expanded = false;
-        bkv_menu.classList.remove('expand');
-        bkv_menu.classList.add('contract');
-      } else {
-        // expand
-        bkv_expanded = true;
-        bkv_menu.classList.remove('contract');
-        bkv_menu.classList.add('expand');
-      }
-    }
-  })();
-  </script>
+  <script src='bulgakov.js'></script>
 </body>
 </html>
