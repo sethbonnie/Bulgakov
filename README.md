@@ -23,13 +23,3 @@ Include `bulgakov.css` and `bulgakov.js`, then structure your html with the foll
 Bulgakov will handle the rest.
 
 Put any content that belongs in the menu inside `#bkv_persistent` or `#bkv_collapsible`. Those two sections mostly pertain to how the menu is displayed on smaller screens. Anything inside  `#bkv_persistent` will show up on the top navbar, anything in `#bkv_collapsible` will only show up when the menu is expanded.
-
-### Extending
-
-I wouldn't recommend changing any positioning and overflows for `#bkv_menu` and `#bkv_container`, that stuff is legit man - Holy Grail  and all that. Other than that, everything else is fair game.
-
-### Contributing
-
-`fork -> feature-branch -> push -> pull-requesto`
-
-Contributions are very much welcome!
