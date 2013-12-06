@@ -1,6 +1,6 @@
 (function() {
-  var bkv_trigger = document.getElementById('bkv_menu_trigger');
-  var bkv_menu = document.getElementById('bkv_menu');
+  var bkv_trigger = document.querySelector('.bkv_menu_trigger');
+  var bkv_menu = document.querySelector('.bkv_menu');
   var bkv_expanded = false;
 
   bkv_menu.classList.add('contract');
