@@ -63,19 +63,19 @@ html, body {
 /* Images */
 .contract .bkv_menu_trigger {
   background-image: url(menu_sprite.png);
-  background-position: 0px 48px;
+  background-position: 0px 24px;
 }
 .expand .bkv_menu_trigger {
   background-image: url(menu_sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px 72px;
 }
 .contract .bkv_menu_trigger:hover {
   background-image: url(menu_sprite.png);
-  background-position: 0px 24px;
+  background-position: 0px 48px;
 }
 .expand .bkv_menu_trigger:hover {
   background-image: url(menu_sprite.png);
-  background-position: 0px 72px;
+  background-position: 0px 0px;
 }
 
 .bkv_main {
