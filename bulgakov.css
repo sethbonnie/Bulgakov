@@ -36,6 +36,7 @@ html, body {
   overflow-y: hidden;
   color: #444;
 }
+
 .bkv_persistent {
 }
 
@@ -49,6 +50,17 @@ html, body {
 .bkv_menu_trigger:hover {
   cursor: pointer;
 }
+
+/* CSS3 Transitions */
+.contract, .expand {
+  /* height */
+  -moz-transition: height 300ms ease-in;
+  -webkit-transition: height 300ms ease-in;
+  -o-transition: height 300ms ease-in;
+  transition: height 300ms ease-in;
+}
+
+/* Images */
 .contract .bkv_menu_trigger {
   background-image: url(menu_sprite.png);
   background-position: 0px 48px;
