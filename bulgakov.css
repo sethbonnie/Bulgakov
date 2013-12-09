@@ -92,7 +92,6 @@ html, body {
   }
   .bkv_menu {
     left: 0px;
-    padding-top: 180px;
   }
   /* Both classes are the same since at this level there's no 
    * notion of expansion or contraction. */
@@ -113,7 +112,6 @@ html, body {
   }
   .bkv_menu {
     left: 0px;
-    padding-top: 140px;
   }
   /* Both classes are the same since at this level there's no 
    * notion of expansion or contraction. */
