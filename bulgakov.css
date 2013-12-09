@@ -79,8 +79,6 @@ html, body {
 }
 
 .bkv_main {
-  padding-top: 30px;
-  padding-bottom: 50px;
   overflow: auto;
   overflow-y: auto;
   height: 100%;
