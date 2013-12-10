@@ -1,0 +1,17 @@
+/* Images */
+.contract .bkv_menu_trigger {
+  background-image: url(img/menu_sprite.png);
+  background-position: 0px 24px;
+}
+.expand .bkv_menu_trigger {
+  background-image: url(img/menu_sprite.png);
+  background-position: 0px 72px;
+}
+.contract .bkv_menu_trigger:hover {
+  background-image: url(img/menu_sprite.png);
+  background-position: 0px 48px;
+}
+.expand .bkv_menu_trigger:hover {
+  background-image: url(img/menu_sprite.png);
+  background-position: 0px 0px;
+}
