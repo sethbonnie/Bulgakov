@@ -1,6 +1,6 @@
 (function() {
   var get_trigger = function() {
-    document.querySelector('.bkv_menu_trigger');
+    return document.querySelector('.bkv_menu_trigger');
   };
   var get_menu = function() {
     return document.querySelector('.bkv_menu');
