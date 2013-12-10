@@ -27,6 +27,11 @@ describe('bkv.init', function() {
   it('should attach .contract to .bkv_menu', function() {
     expect(bkv_menu.className.indexOf('contract')).not.toBe(-1);
   });
+
+  it('should attach an onclick callback to the .bkv_menu_trigger', function(){
+    // expect(bkv_menu_trigger.onclick).not.toBe(null);
+    expect(typeof bkv_menu_trigger.onclick).toBe("function");
+  });
 });
 
 describe('addClass', function(){
